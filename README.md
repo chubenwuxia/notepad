@@ -2,7 +2,7 @@
 1.NoteList中显示条目增加时间显示（显示的时间是最后一次修改时间，每次进行修改时间都会更新）通过Cursor从数据库中读取出最后一次修改的时间：通过SimpleCursorAdapter装填，PROJECTION中定义显示的时间然后在在dataColumns，viewIDs中补充时间部分
 ![](https://raw.githubusercontent.com/chubenwuxia/newpitcure/master/notepad1%20(1).png)
 2.增加了搜索功能，使用标题关键字搜索list_options_menu.xml，添加一个搜索的item
-NoteList中找到onOptionsItemSelected方法，在switch中添加搜索的case语句:在新建的NoteSearch的activity
+NoteList中找到onOptionsItemSelected方法，在switch中添加搜索的case语句跳转到新建的NoteSearch的activity，SearchView跟ListView相结合，动态地显示搜索结果
 ![](https://raw.githubusercontent.com/chubenwuxia/newpitcure/master/notepad1%20(2).png)
 3.增加了更改记事本背景的功能有五种颜色可供选择
 ![](https://raw.githubusercontent.com/chubenwuxia/newpitcure/master/notepad1%20(4).png)
